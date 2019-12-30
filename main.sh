@@ -7,8 +7,11 @@ echo '+------------------+'
 echo
 
 # compile fortran with 
-# gfortran -ffree-form sample.f -o sample
+# gfortran -ffree-form sample.f -o ./path-to-sample/sample
 # ./path-to-sample/sample
+
+# fortran seems remarkably small & fast
+# -ffree-form is to avoid formatting errors
 
 echo "building Fortran things: "
 echo '+------------------+'
@@ -17,5 +20,5 @@ echo '+------------------+'
 echo "binaries in ./Results"
 echo '+------------------+'
 
-gfortran -ffree-form hello.f -o hello
-./hello
+gfortran -ffree-form hello.f -o ./Results/hello
+./Results/hello
