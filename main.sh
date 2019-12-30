@@ -15,10 +15,14 @@ echo
 
 echo "building Fortran things: "
 echo '+------------------+'
-echo "hello.f"
+echo "hello.f90"
+echo "gravity.f90"
 echo '+------------------+'
 echo "binaries in ./Results"
 echo '+------------------+'
 
-gfortran -ffree-form hello.f -o ./Results/hello
+gfortran -ffree-form hello.f90 -o ./Results/hello
 ./Results/hello
+
+gfortran -ffree-form gravity.f90 -o ./Results/gravity
+./Results/gravity

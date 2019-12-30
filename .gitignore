@@ -1,0 +1,8 @@
+# ignore filename.ext
+# filename.ext
+
+# ignore folder
+Resutls/
+
+# ignore any file *.ext
+# *.ext
